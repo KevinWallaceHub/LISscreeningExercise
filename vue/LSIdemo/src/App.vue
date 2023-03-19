@@ -4,7 +4,9 @@
 <template>
   <header>
     <nav>
+      <router-link v-bind:to="{name:'home'}"> home</router-link>
       <router-link v-bind:to="{name:'datadisplay'}"> Data Display</router-link>
+
     </nav>
   </header>
 

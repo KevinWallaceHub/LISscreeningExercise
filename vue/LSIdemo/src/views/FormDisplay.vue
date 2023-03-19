@@ -52,7 +52,6 @@ export default {
         hometown: this.hometown,
       };
       this.$store.commit('addEntry', entry);
-
       // Show the confirmation message
       const message = `Name: ${this.name}\nAge: ${this.age}\nTitle: ${this.title}\nHometown: ${this.hometown}`;
       alert(message);
@@ -62,6 +61,7 @@ export default {
       this.age = '';
       this.title = '';
       this.hometown = '';
+      this.$router.push({ name: 'datadisplay' });
     },
   },
 };
